@@ -1,9 +1,24 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "manifest_version": 1,
-  "name": "Company Internal Marketplace",
-  "description": "公司內部認證的開發工具集 (Hosted on Gerrit)",
+  "name": "company-internal-marketplace",
+  "description": "Company Internal Developer Tools (LSP)",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Internal Dev Team",
+    "email": "dev-tools@company.com",
+    "url": "https://gerrit.company.com/plugins"
+  },
   "plugins": [
-    "./clangd",
-    "./pyright"
+    {
+      "name": "company-clangd",
+      "description": "Standard C++ LSP setup with clang-tidy",
+      "source": "./clangd"
+    },
+    {
+      "name": "company-pyright",
+      "description": "Standard Python LSP setup",
+      "source": "./pyright"
+    }
   ]
 }
