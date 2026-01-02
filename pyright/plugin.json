@@ -1,0 +1,12 @@
+{
+  "name": "company-pyright",
+  "version": "1.0.0",
+  "description": "Company Standard Python LSP (Pyright with Type Checking)",
+  "author": {
+    "name": "Internal Dev Tools",
+    "email": "dev-tools@company.com"
+  },
+  "repository": "https://gerrit.company.com/plugins/pyright",
+  "license": "MIT",
+  "keywords": ["python", "lsp", "language-server", "type-checking"]
+}
